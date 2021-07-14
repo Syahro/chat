@@ -1,3 +1,4 @@
+import 'package:chat/pages/home_page.dart';
 import 'package:chat/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -47,7 +48,12 @@ class SplashScreen extends StatelessWidget {
                 height: 55,
                 width: 180,
                 child: RaisedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) {
+                      return HomePage();
+                    }));
+                  },
                   color: purpleColor,
                   child: Text(
                     'Let\'s Begin',
