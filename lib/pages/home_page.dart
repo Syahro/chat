@@ -23,13 +23,22 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: defaultMargin),
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Image.asset(
                         'assets/user.png',
                         width: 40,
                         height: 40,
                       ),
+                      SizedBox(
+                        width: 10,
+                      ),
+                      Text(
+                        'Michael Lock',
+                        style: titleTextStyle.copyWith(
+                          fontSize: 22,
+                        ),
+                      ),
+                      Spacer(),
                       Image.asset(
                         'assets/menu.png',
                         height: 14,
